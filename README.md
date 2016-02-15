@@ -13,10 +13,10 @@ Please follow the **Get Started** section steps to install locally a manager for
 #Xtribe Manager API
 
 startManager(port,manageSystemMessage,manageExperimentMessage,monitorEnabled)
-    port: your manager will listen on this port
-    system message callback: callback for managing system messages
-    experiment message callback: callback for managing your own experiment messages
-    debug mode: true or false to run it in debug mode
+- port: your manager will listen on this port
+- system message callback: callback for managing system messages
+- experiment message callback: callback for managing your own experiment messages
+- debug mode: true or false to run it in debug mode
 
 
 
