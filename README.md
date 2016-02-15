@@ -1,6 +1,6 @@
 My first Xtribe manager
 
-Please follow the 'Getting Started' section steps to install locally a manager for your own Xtribe game. This manager is the starting point for developing your own manager, providing useful tools to enhance creating experiments experience. Please refer to 'Xtribe Manager API' for details.
+Please follow the 'Get Started' section steps to install locally a manager for your own Xtribe game. This manager is the starting point for developing your own manager, providing useful tools to enhance creating experiments experience. Please refer to 'Xtribe Manager API' for details.
 
 Get started
 - Make sure to have a recent version of node.js (https://nodejs.org/en/) installed on your computer.
