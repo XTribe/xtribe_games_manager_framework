@@ -1,0 +1,24 @@
+{
+  "name": "xman",
+  "version": "1.0.0",
+  "description": "Example of a node manager for Xtribe",
+  "author": "Elisabetta Falivene <e.falivene@ilabroma.com>",
+  "main": "index.js",
+  "dependencies": {
+    "etsman": "*"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "licenses": [
+    {
+      "type": "Xtribe",
+      "url": "http://www.xtribe.eu/en/page/disclaimer-en"
+    }
+  ],
+  "keywords": [
+    "xtribe",
+    "ets"
+  ]
+}
