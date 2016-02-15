@@ -12,7 +12,7 @@ Welcome to Xtribe games manager developing framework! Please follow the **Get St
 
 #I'm one step ahead!
 So, you have already developed your manager in node.js? If you want to use our managers API, install it in your project.
-In your manager directory run `npm install etsman`.
+In your manager directory run `npm install etsman` and do not forget to include it in your main js file `var etsman = require('etsman');`.
 
 
 #Xtribe Manager API
