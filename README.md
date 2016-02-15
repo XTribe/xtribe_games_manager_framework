@@ -4,11 +4,11 @@ Please follow the 'Get Started' section steps to install locally a manager for y
 
 Get started
 - Make sure to have a recent version of node.js (https://nodejs.org/en/) installed on your computer.
-- Create a directory to store your manager and clone this repository inside it.
-- Run 'npm-install'
-- Run 'node index.js'
-- Visit 'http://localhost:11345/' to check your manager is running
-- Modify 'index.js' to customize your manager
+- Create a directory to store your manager and copy 'index.js' and 'package.json' inside it.
+- Run 'npm-install' to install required dependencies
+- Run 'node index.js'to run your manager
+- Visit 'http://localhost:11345/' to check it is running
+- Modify 'index.js' for customizations
 
 Xtribe Manager API
 
