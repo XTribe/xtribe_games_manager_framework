@@ -1,14 +1,14 @@
 #Building a manager
 
-Welcome to Xtribe games manager developing framework! Please follow the **Get Started** section steps to install locally a manager for your own Xtribe game. This manager is the starting point for developing your own manager, providing useful tools to enhance creating experiments experience. Please refer to **Xtribe Manager API** section for details.
+Welcome to Xtribe games manager developing framework! Please follow the **Get Started** section steps to install locally a manager for your own Xtribe game. This manager is the starting point for developing your own manager, and the library included provide a set of useful tools to enhance creating experiments experience. Please refer to **Xtribe Manager API** section for details.
 
 #Get started
 - Make sure to have a recent version of [node.js](https://nodejs.org/) installed.
 - Create a directory to store your manager and copy **index.js** and **package.json** inside it.
-- Run `npm-install` to install required dependencies
-- Run `node index.js` to run your manager
-- Visit **http://localhost:11345/** to check it is running
-- Modify **index.js** for customizations
+- From the directory you just created, run `npm-install` to install required libraries. This will create a 'node_modules' directory, containing Xtribe Manager Library (etsman) and the libraries it depends on.
+- Run `node index.js` to run your manager.
+- Visit **http://localhost:11345/** to check if it is running.
+- Modify **index.js** for customizations.
 
 #I'm one step ahead!
 So, you have already developed your manager in node.js? If you want to use our managers API, install it in your project.
