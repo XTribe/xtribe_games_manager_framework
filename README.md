@@ -30,11 +30,14 @@ and do not forget to include it in your main js file
 
 #Xtribe Manager API
 
-startManager(port,manageSystemMessage,manageExperimentMessage,monitorEnabled)
-- port: your manager will listen on this port
+`startManager(port,manageSystemMessage,manageExperimentMessage,monitorEnabled)`
+
+Launch a standard manager, listening to Xtribe messages. Accepts these parameter:
+
+- port: your manager will be listening on this port
 - system message callback: callback for managing system messages
 - experiment message callback: callback for managing your own experiment messages
-- debug mode: true or false to run it in debug mode
+- (optional) debug mode: true or false to run it in debug mode
 
 #Troubleshooting
 - *When I run my manager, this error is shown.*
