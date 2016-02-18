@@ -44,7 +44,7 @@ Launch a standard manager, listening to Xtribe messages. Accepts these parameter
  
    `Error: Cannot find module 'etsman'`
 
-  - You have not installed Xtribe Manager API. Run `npm install` in the directory where you stored index.js and package.json.
+  - You have not installed Xtribe Manager API. Run `npm install` in the directory where you stored downloaded files.
   
 - *When I install libraries with `npm install`, my node_modules directory is nearly empty or it is not created.*
   - Check your permissions. If you are on Linux or Mac OS you may need to run npm install as superuser.
