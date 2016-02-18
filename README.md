@@ -4,14 +4,16 @@ Welcome to Xtribe Games Manager Framework! Please follow **Quick Start** section
 
 #Quick Start
 - Make sure to have a recent version of [node.js](https://nodejs.org/) installed.
-- Create a directory to store your manager and copy **index.js** and **package.json** inside it.
-- From the directory you just created, run `npm-install` to install required libraries. This will create a 'node_modules' directory, containing Xtribe Manager Library (etsman) and the libraries it depends on.
+- Download the [Xtribe Games Manager Framework](https://github.com/XTribe/xtribe_games_manager_framework/archive/master.zip) from our [Github project](https://github.com/XTribe/xtribe_games_manager_framework).
+- Unzip the file.
+- Open a command-line terminal and change directory to the 'master' directory you just unzipped or copy files in a directory of your choice and change to it.
+- Run `npm-install` to install required libraries. This will create a 'node_modules' directory, containing Xtribe Manager Library (etsman) and the libraries it depends on.
 - Run `node index.js` to run your manager.
-- Visit **http://localhost:11345/** to check if it is running.
+- Visit **http://localhost:11345/** on your browser to check if it is running. This is the manager URI to provide to Xtribe while publishing the game.
 - Modify **index.js** for customizations.
 
-#I'm one step ahead!
-So, you have already developed your manager in node.js? If you want to use our managers API, install it in your project.
+#Include Manager API in your project
+If you already have developed a manager in node.js and you want to use our Xtribe Manager API, install it is very easy.
 
 In your manager directory run 
 
@@ -20,6 +22,7 @@ In your manager directory run
 and do not forget to include it in your main js file 
 
 `var etsman = require('etsman');`.
+Please refer to Manager API section for details about tools made available by Xtribe Manager Library.
 
 #References
 [Join the Experimental Tribe!](http://xtribe.eu/)
@@ -28,7 +31,7 @@ and do not forget to include it in your main js file
 
 [Contact us](mailto:xtribe.eu@gmail.com)
 
-#Xtribe Manager API
+#Manager API
 
 `startManager(port,manageSystemMessage,manageExperimentMessage,monitorEnabled)`
 
