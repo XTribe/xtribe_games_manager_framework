@@ -23,7 +23,9 @@ and do not forget to include it in your main js file
 
 #References
 [Join the Experimental Tribe!](http://xtribe.eu/)
+
 [Xtribe documentation](http://xtribe.eu/en/page/xtribe-devdoc)
+
 [Contact us](mailto:xtribe.eu@gmail.com)
 
 #Xtribe Manager API
