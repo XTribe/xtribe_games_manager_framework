@@ -1,42 +1,38 @@
-// Xtribe manager API
-
 /**
- * Module etsman includes various utilities in addition to the main method 'startManager' (see below).
- * 
- * It exports the useful library async (https://github.com/caolan/async -> provides straight-forward, 
- * powerful functions for working with asynchronous JavaScript)
- * 
- * on etsman.async
- * 
- * and the library lodash (https://lodash.com/ -> learn how to take the hassle out of working 
- * with arrays, numbers, objects, strings, etc!) 
- * 
- * on etsman._
- * 
- * so you don't have to include them again.
- * 
- * Useful methods you can find are:
- * 
- * - etsman.tryWaterfall(functions, callback) see below for an explanation
- * 
- * - etsman.userError(errorString) to stop execution and send back a user error
- * 
- * - etsman.nothingFound() to stop execution and send back a 'nothingfound' error
- * 
- * - etsman.exitIfEmpty(obj) to stop execution and send back a 'nothingfound' error if the object is empty
- * 
- * - etsman.exitIfNull(obj) to stop execution and send back a 'nothingfound' error if the object is strictly null
- * 
- * - etsman.errIfEmpty(obj) to stop execution and send back an 'empty object' error if the object is empty
- * 
- * - etsman.errIfNull(obj) to stop execution and send back an 'null object' error if the object is strictly null
- * 
- * - etsman.isEmpty(obj) to check if an object is empty (returns true or false)
- * 
- * - etsman.prettyJson(obj) to format an object in a readable JSON
- * 
+ * Xtribe Games Manager Framework
+ * Module 'etsman' includes several utilities to build a manager for an Xtribe experiment.
  */
+
+/* TODO
+- errore trovato da pietro (quello nel modulo per cui la risposta al ready viene inviata con "system" come recipient e quindi al client nn arriva)
+- pagina html settings e unire pagina test al monitor
+- authentication on monitor*/
+
+// Import our library! Every utility will be available as etsman.functionName. Please refer
+// to documentation for details about available functions.
 var etsman = require('etsman');
+
+/** We start the manager passing the 'options' object. For all the available options refer to documentation.
+ * 
+ * You can specify the port on which to listen, a series of handlers for the
+ * various kind of messages (onClientMessage, onPing, onInstance, onJoin,
+ * onLeave, onReady, onOver, onDrop, onAbort, onEnd, onError), if to enable the
+ * monitor service, and so on.
+ */
+var options = {
+	port : 9000, 								//Your manager will be listening on this port E.g.: http://localhost:9000 (or http://yourServerAddress:9000)
+	onClientMessage : onClientMessageExample, 	//Handler for client messages
+	onReady : onReadyExample, 					//Handler for "ready" server message
+	monitor : {							        //Monitor displays all the chain of messages exchanged between Xtribe, your manager and your clients to let you understand what is going on and to debug your code
+		enabled : true, 						//Enable/disable monitor, it will be available by default on this link: http://localhost:9000/monitor (or http://yourServerAddress:yourPort/monitor)
+		customLink : "myMonitor" 	            //You can customize the link to be http://localhost:9000/myMonitor (or http://yourServerAddress:yourPort/myMonitor)
+	},
+	debugSender : {							    //Send messages directly to your manager to debug it
+		enabled : true, 						//Enable/disable debug sender, it will be available by default on this link: http://localhost:9000/monitor (or http://yourServerAddress:yourPort/debugSender)
+		customLink : "mySender" 	            //You can customize the link to be http://localhost:9000/mySender (or http://yourServerAddress:yourPort/mySender)
+	}							                
+};
+etsman.startManager(options);
 
 /**
  * An example of a simple handler for client messages.
@@ -153,11 +149,11 @@ function onReadyExample(message, callback) {
 			 ], callback);
 }
 
-function readUser(userId, callback) {
-	etsman.errIfEmpty(userId);
+function readUser(clientId, callback) {
+	etsman.errIfEmpty(clientId);
 	//read the user data...
 	var user = {
-			userId : userId,
+			clientId : clientId,
 			points : 300,
 			level : 2
 	};
@@ -180,29 +176,3 @@ function saveUser(user, callback) {
 	//call the callback
 	callback(null, user);
 }
-
-var options = {
-	port : 9000, //port on which to listen
-	onClientMessage : onClientMessageExample, //handler for client messages
-	onReady : onReadyExample, //handler for "ready" server message
-	monitor : {
-		enabled : true, //create monitor website
-		dir : "/monitor" //serve it on this directory (http://localhost:9000/monitor)
-	},
-	testSiteDir : "/test" //create a directory with tests for the manager (http://localhost:9000/test)
-};
-
-/**
- * We start the manager passing the options object. For all the possible
- * recognized options properties see the etsman.js file in the etsman package.
- * 
- * You can specify the port on which to listen, a series of handlers for the
- * various kind of messages (onClientMessage, onPing, onInstance, onJoin,
- * onLeave, onReady, onOver, onDrop, onAbort, onEnd, onError), if to enable the
- * monitor service, etc.
- * 
- * All of the handler functions must receive two parameters (as described in the
- * example above): the incoming message and a callback to be called on
- * completion.
- */
-etsman.startManager(options);

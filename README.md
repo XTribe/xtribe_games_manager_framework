@@ -1,7 +1,7 @@
 #Building a manager in node.js
 
-Welcome to Xtribe Games Manager Framework! Please follow **Quick Start** section steps to install a manager for your own Xtribe game. This is the starting point for developing your own manager, and the library included provide a set of useful tools to enhance creating experiments experience. Please refer to **Manager API** section for details.
-
+Welcome to Xtribe Games Manager Framework! Please follow [Quick Start](#quickstart) section steps to install a manager for your own Xtribe game. This is the starting point for developing your own manager, and the library included provide a set of useful tools to enhance creating experiments experience. Please refer to [Xtribe Games Manager API](https://github.com/XTribe/xtribe_manager_api) for details.
+<a name="quickstart"><a/>
 #Quick Start
 - Make sure to have a recent version of [node.js](https://nodejs.org/) installed.
 - Download the [Xtribe Games Manager Framework](https://github.com/XTribe/xtribe_games_manager_framework/archive/master.zip) from our [Github project](https://github.com/XTribe/xtribe_games_manager_framework).
@@ -11,7 +11,7 @@ Welcome to Xtribe Games Manager Framework! Please follow **Quick Start** section
 - Run `node index.js` to run your manager.
 - Visit **http://localhost:11345/** on your browser to check if it is running. This is the manager URI to provide to Xtribe while publishing the game.
 - Modify **index.js** for customizations.
-
+<a name="includeapi"><a/>
 #Include Manager API in your project
 If you already have developed a manager in node.js and you want to use our Xtribe Manager API, install it is very easy.
 
@@ -22,26 +22,19 @@ In your manager directory run
 and do not forget to include it in your main js file 
 
 `var etsman = require('etsman');`.
-Please refer to Manager API section for details about tools made available by Xtribe Manager Library.
-
+Please refer to [Xtribe Games Manager API](https://github.com/XTribe/xtribe_manager_api) for details about utilities available.
+<a name="references"><a/>
 #References
 [Join the Experimental Tribe!](http://xtribe.eu/)
 
-[Xtribe documentation](http://xtribe.eu/en/page/xtribe-devdoc)
+[Xtribe Documentation](http://xtribe.eu/en/page/xtribe-devdoc)
+
+[Xtribe Games Manager Framework](https://github.com/XTribe/xtribe_games_manager_framework)
+
+[Xtribe Games Manager API](https://github.com/XTribe/xtribe_manager_api)
 
 [Contact us](mailto:xtribe.eu@gmail.com)
-
-#Manager API
-
-`startManager(port,manageSystemMessage,manageExperimentMessage,monitorEnabled)`
-
-Launch a standard manager, listening to Xtribe messages. Accepts these parameter:
-
-- port: your manager will be listening on this port
-- system message callback: callback for managing system messages
-- experiment message callback: callback for managing your own experiment messages
-- (optional) debug mode: true or false to run it in debug mode
-
+<a name="troubleshooting"><a/>
 #Troubleshooting
 - *When I run my manager, this error is shown.*
  
@@ -61,4 +54,3 @@ Launch a standard manager, listening to Xtribe messages. Accepts these parameter
      `npm set registry http://registry.npmjs.org/` 
      
      `npm cache clean`
-
