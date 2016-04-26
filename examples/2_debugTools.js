@@ -17,7 +17,8 @@ var options = {
 	port : 9000,
 	monitor : {							        
 		enabled : true, 			//Enable/disable Monitor, it will be available by default on this link: http://localhost:9000/monitor (or http://yourServerAddress:yourPort/monitor)
-		customLink : 'myMonitor'	//You can customize link to be http://localhost:9000/myMonitor (or http://yourServerAddress:yourPort/myMonitor)
+		customLink : 'myMonitor',	//You can customize link to be http://localhost:9000/myMonitor (or http://yourServerAddress:yourPort/myMonitor)
+		verbose: true				//Enable verbose mode to log system more informations
 	},
 	debugSender : {							    
 		enabled : true,				//Enable/disable Debug Sender, it will be available by default on this link: http://localhost:9000/monitor (or http://yourServerAddress:yourPort/debugSender)

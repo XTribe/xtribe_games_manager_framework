@@ -1,6 +1,7 @@
 #Building a manager in node.js
 
 Welcome to Xtribe Games Manager Framework! Please follow [Quick Start](#quickstart) section steps to install a manager for your own Xtribe game. This is the starting point for developing your own manager, and the library included provide a set of useful tools to enhance creating experiments experience. Please refer to [Xtribe Games Manager API](https://github.com/XTribe/xtribe_manager_api) for details.
+Check out 'examples' directory for a lot of useful examples about building your own manager.
 <a name="quickstart"><a/>
 #Quick Start
 - Make sure to have a recent version of [node.js](https://nodejs.org/) installed.
