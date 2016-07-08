@@ -1,7 +1,7 @@
 /**
  * Xtribe Games Manager Framework
  * 
- * This example merge all the other examples in one manager, ready to go.
+ * This example merge some of the other examples in one manager, ready to go.
  */
 
 /*
@@ -17,16 +17,16 @@ var etsman = require('etsman');
  * Please refer to documentation for details about available options.
  */
 var options = {
-	port : 9000, 					//Your manager will be listening on this port E.g.: http://localhost:9000 (or http://yourServerAddress:9000)							                
-	onReady : onReadyExample,					//Handler for "ready" system message
-	onClientMessage : onClientMessageExample,	//Handler for client messages
+	port : 9099, 					// Your manager will be listening on this port E.g.: http://localhost:9099 (or http://yourServerAddress:9099)							                
+	onReady : onReadyExample,					// Handler for "ready" system message
+	onClientMessage : onClientMessageExample,	// Handler for client messages
 	monitor : {							        
-		enabled : true, 			//Enable/disable Monitor, it will be available by default on this link: http://localhost:9000/monitor (or http://yourServerAddress:yourPort/monitor)
-		customLink : "myMonitor"	//You can customize link to be http://localhost:9000/myMonitor (or http://yourServerAddress:yourPort/myMonitor)
+		enabled : true, 			// Enable/disable Monitor, it will be available by default on this link: http://localhost:9099/monitor (or http://yourServerAddress:yourPort/monitor)
+		customLink : "myMonitor"	// You can customize link to be http://localhost:9099/myMonitor (or http://yourServerAddress:yourPort/myMonitor)
 	},
 	debugSender : {							    
-		enabled : true,				//Enable/disable Debug Sender, it will be available by default on this link: http://localhost:9000/monitor (or http://yourServerAddress:yourPort/debugSender)
-		customLink : "mySender"		//You can customize link to be http://localhost:9000/mySender (or http://yourServerAddress:yourPort/mySender)
+		enabled : true,				// Enable/disable Debug Sender, it will be available by default on this link: http://localhost:9099/monitor (or http://yourServerAddress:yourPort/debugSender)
+		customLink : "mySender"		// You can customize link to be http://localhost:9099/mySender (or http://yourServerAddress:yourPort/mySender)
 	}							                
 };
 etsman.startManager(options);

@@ -1016,6 +1016,7 @@ body .markdown-body
 }
 </style><title>README</title></head><body><article class="markdown-body"><h1 id="building-a-manager-in-nodejs"><a name="user-content-building-a-manager-in-nodejs" href="#building-a-manager-in-nodejs" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Building a manager in node.js</h1>
 <p>Welcome to Xtribe Games Manager Framework! Please follow <a href="#quickstart">Quick Start</a> section steps to install a manager for your own Xtribe game. This is the starting point for developing your own manager, and the library included provide a set of useful tools to enhance creating experiments experience. Please refer to <a href="https://github.com/XTribe/xtribe_manager_api">Xtribe Games Manager API</a> for details.<br />
+Check out &lsquo;examples&rsquo; directory for a lot of useful examples about building your own manager.<br />
 <a name="quickstart"><a/></p>
 <h1 id="quick-start"><a name="user-content-quick-start" href="#quick-start" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Quick Start</h1>
 <ul>
@@ -1024,8 +1025,8 @@ body .markdown-body
 <li>Unzip the file.</li>
 <li>Open a command-line terminal and change directory to the &lsquo;master&rsquo; directory you just unzipped or copy files in a directory of your choice and change to it.</li>
 <li>Run <code>npm-install</code> to install required libraries. This will create a &lsquo;node_modules&rsquo; directory, containing Xtribe Manager Library (etsman) and the libraries it depends on.</li>
-<li>Run <code>node index.js</code> to run your manager.</li>
-<li>Visit *<em><a href="http://localhost:9000/*"><a href="http://localhost:9000/*">http://localhost:9000/*</a></a></em> on your browser to check if it is running. This is the manager URI to provide to Xtribe while publishing the game.</li>
+<li>Run <code>nodejs index.js</code> to run your manager.</li>
+<li>Visit <strong> <a href="http://localhost:11345/"><a href="http://localhost:11345/">http://localhost:11345/</a></a> </strong> on your browser to check if it is running. Please notice that Xtribe needs to reach your manager so start it on a server that is someway reachable, that is having an url address or a fixed ip (e.g.:http://yourServerAddressOrIp:11345/). This is the Manager URI to provide to Xtribe while publishing the game.</li>
 <li>Modify <strong>index.js</strong> for customizations.</li>
 <li>Check out <strong>examples</strong> directory and take a look to code examples to get started about building your own manager.<br />
 <a name="includeapi"><a/></li>
@@ -1036,8 +1037,17 @@ body .markdown-body
 <p><code>npm install etsman</code> </p>
 <p>and do not forget to include it in your main js file </p>
 <p><code>var etsman = require('etsman');</code>.<br />
-Please refer to <a href="https://github.com/XTribe/xtribe_manager_api">Xtribe Games Manager API</a> for details about utilities available.<br />
-<a name="references"><a/></p>
+Please refer to <a href="https://github.com/XTribe/xtribe_manager_api">Xtribe Games Manager API</a> for details about utilities available.</p>
+<p><a name="managerapi"><a/></p>
+<h1 id="how-to-use-examples-with-my-game-interface-on-xtribe"><a name="user-content-how-to-use-examples-with-my-game-interface-on-xtribe" href="#how-to-use-examples-with-my-game-interface-on-xtribe" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>How to use examples with my game interface on Xtribe?</h1>
+<p>Did you already create your game and user interface on Xtribe, didn&rsquo;t you? Check out our <a href="http://xtribe.eu/node/64#XTribe_tutorial:_your_first_game">tutorial</a> to create your first game on our platform. Follow <a href="http://xtribe.eu/node/64#Publishing_the_game">&lsquo;Publishing the game&rsquo;</a> and <a href="http://xtribe.eu/node/64#User_interface">&lsquo;User Interface&rsquo;</a> paragraphs instructions. It&rsquo;s easy and quick.</p>
+<p>The example managers provided, run as standalone application as you start them:</p>
+<p><code>nodejs example_name.js</code></p>
+<p>Every example starts on port 9000+example number (e.g.: 9001 for example 1, 9002 for example 2), so, if you start one of them on your server, it will be running on an url like:</p>
+<p><code>http://yourServerAddressOrIp:9001</code></p>
+<p>Copy this url and paste it in &lsquo;Manager URI&rsquo; field in the settings of your game. Now, play your game to see the manager in action. </p>
+<p>Please notice that Xtribe needs to reach your manager so start it on a server that is someway reachable, that is having an url address or a fixed ip (e.g.:http://yourServerAddressOrIp:yourPort/). </p>
+<p><a name="references"><a/></p>
 <h1 id="references"><a name="user-content-references" href="#references" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>References</h1>
 <p><a href="http://xtribe.eu/">Join the Experimental Tribe!</a></p>
 <p><a href="http://xtribe.eu/en/page/xtribe-devdoc">Xtribe Documentation</a></p>

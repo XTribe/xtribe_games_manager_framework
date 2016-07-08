@@ -15,19 +15,19 @@ var etsman = require('etsman');
 * Please refer to documentation for details about available messages and their meaning. 
 */
 var options = {
-	port : 9000, 							
-	onReady : onReadyExample,	//Handler for 'ready' system message
-	onPing : null,				//Handler for 'ping' system message
-	onInstance : null,			//Handler for 'instance' system message
-	onJoin : null,				//Handler for 'join' system message
-	onLeave : null,				//Handler for 'leave' system message
-	onOver : null,				//Handler for 'over' system message
-	onDrop : null,				//Handler for 'drop' system message
-	onAbort : null,				//Handler for 'abort' system message
-	onEnd : null,				//Handler for 'end' system message
-	onError : null,				//Handler for 'error' system message	
+	port : 9003, 				// Your manager will be listening on this port E.g.: http://localhost:9003 (or http://yourServerAddress:yourPort)	
+	onReady : onReadyExample,	// Handler for 'ready' system message
+	onPing : null,				// Handler for 'ping' system message
+	onInstance : null,			// Handler for 'instance' system message
+	onJoin : null,				// Handler for 'join' system message
+	onLeave : null,				// Handler for 'leave' system message
+	onOver : null,				// Handler for 'over' system message
+	onDrop : null,				// Handler for 'drop' system message
+	onAbort : null,				// Handler for 'abort' system message
+	onEnd : null,				// Handler for 'end' system message
+	onError : null,				// Handler for 'error' system message	
 	monitor : {							        
-		enabled : true 			//Enable/disable Monitor, it will be available by default on this link: http://localhost:9000/monitor (or http://yourServerAddress:yourPort/monitor)
+		enabled : true 			// Enable/disable Monitor, it will be available by default on this link: http://localhost:9003/monitor (or http://yourServerAddress:yourPort/monitor)
 	}               
 };
 etsman.startManager(options);

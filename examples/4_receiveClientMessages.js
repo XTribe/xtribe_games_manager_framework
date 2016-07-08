@@ -10,10 +10,10 @@
 var etsman = require('etsman');
 
 var options = {
-	port : 9000, 								
+	port : 9004, 				// Your manager will be listening on this port E.g.: http://localhost:9004 (or http://yourServerAddress:yourPort)
 	onClientMessage : onClientMessageExample,	//Handler for client messages
 	monitor : {							        
-		enabled : true 			//Enable/disable Monitor, it will be available by default on this link: http://localhost:9000/monitor (or http://yourServerAddress:yourPort/monitor)
+		enabled : true 			// Enable/disable Monitor, it will be available by default on this link: http://localhost:9004/monitor (or http://yourServerAddress:yourPort/monitor)
 	}					                
 };
 etsman.startManager(options);
