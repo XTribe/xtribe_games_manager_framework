@@ -2,6 +2,7 @@
 
 Welcome to Xtribe Games Manager Framework! Please follow [Quick Start](#quickstart) section steps to install a manager for your own Xtribe game. This is the starting point for developing your own manager, and the library included provide a set of useful tools to enhance creating experiments experience. Please refer to [Xtribe Games Manager API](https://github.com/XTribe/xtribe_manager_api) for details.
 Check out 'examples' directory for a lot of useful examples about building your own manager.
+
 <a name="quickstart"><a/>
 #Quick Start
 - Make sure to have a recent version of [node.js](https://nodejs.org/) installed.
@@ -29,7 +30,7 @@ and do not forget to include it in your main js file
 Please refer to [Xtribe Games Manager API](https://github.com/XTribe/xtribe_manager_api) for details about utilities available.
 
 <a name="managerapi"><a/>
-#How to use examples with my game interface on Xtribe?
+#Using example managers with your game interface on Xtribe
 Did you already create your game and user interface on Xtribe, didn't you? Check out our [tutorial](http://xtribe.eu/node/64#XTribe_tutorial:_your_first_game) to create your first game on our platform. Follow ['Publishing the game'](http://xtribe.eu/node/64#Publishing_the_game) and ['User Interface'](http://xtribe.eu/node/64#User_interface) paragraphs instructions. It's easy and quick.
 
 The example managers provided, run as standalone application as you start them:
@@ -42,7 +43,7 @@ Every example starts on port 9000+example number (e.g.: 9001 for example 1, 9002
 
 Copy this url and paste it in 'Manager URI' field in the settings of your game. Now, play your game to see the manager in action. 
 
-Please notice that Xtribe needs to reach your manager so start it on a server that is someway reachable, that is having an url address or a fixed ip (e.g.:http://yourServerAddressOrIp:yourPort/). 
+Please notice that Xtribe needs to reach your manager, so make sure to start it on a server that is someway reachable, that is having an url address or a fixed ip (e.g.:http://yourServerAddressOrIp:yourPort/). 
 
 <a name="references"><a/>
 #References
