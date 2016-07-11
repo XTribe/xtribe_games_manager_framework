@@ -19,15 +19,9 @@
 var etsman = require('etsman');
 
 /** Start your manager passing the 'options' object. 
- * Please refer to documentation for details about available options and defaults.
+ * Please refer to documentation for details about available options.
  */
 var options = {
-	port : 9000, 	//Your manager will be listening on this port E.g.: http://localhost:9000 (or http://yourServerAddress:9000)		
-	monitor : {							        
-		enabled : true, 			// Let's ignore this setting, for now
-		verbose: true				
-	}					                
+	port : 9001 	//Your manager will be listening on this port E.g.: http://localhost:9001 (or http://yourServerAddress:yourPort)							                
 };
 etsman.startManager(options);
-
-// Want to know more? Check the 'examples' directory to get familiar with all tools available!
